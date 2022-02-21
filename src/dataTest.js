@@ -9,20 +9,20 @@ export default {
         },
         {
             id: "01",
-            name: "The Flux",
+            name: "The Metaverse",
             url: "#",
             on: false
         },
         {
             id: "02",
-            name: "Crew",
-            url: "#crew",
+            name: "Whitepaper",
+            url: "#whitepaper",
             on: false
         },
         {
             id: "03",
-            name: "Technology",
-            url: "#technology",
+            name: "Roadmap",
+            url: "#Roadmap",
             on: false
         }]
 }

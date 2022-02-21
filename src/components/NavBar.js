@@ -1,6 +1,6 @@
 
 import React from "react"
-import logo from "../assets/shared/logo.svg"
+import logo from "../assets/shared/logotext.png"
 import dataTest from "../dataTest"
 
 export default function NavBar() {
@@ -40,7 +40,8 @@ export default function NavBar() {
     return (
         <header className="primary-header flex">
             <div>
-                <img src={logo} alt="Enter The Flux logo" className="logo" />
+                <img src={logo} alt="blockchaingamers.co logo" className="logo" />
+
             </div>
             <button className="mobile-nav-toggle " data-visible={mobileMenuVisible ? "true" : "false"} aria-controls="primary-navigation" onClick={handleClickMobile}><span className="sr-only" aria-expanded={mobileMenuVisible ? "true" : "false"}>Menu</span></button>
             <nav>
