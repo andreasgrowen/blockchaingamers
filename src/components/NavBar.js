@@ -3,32 +3,24 @@ import React from "react"
 import logo from "../assets/shared/logotext.png"
 import dataTest from "../dataTest"
 
-export default function NavBar() {
+export default function NavBar(props) {
 
-    const [menuElements, setMenuElements] = React.useState(dataTest.menuElements)
+
     const [mobileMenuVisible, setMobileMenuVisible] = React.useState(dataTest.mobileMenuVisible)
 
+    const menuElements = props.menuElements
     console.log(menuElements)
 
     const menu = menuElements.map(menuElement => {
         return (
             <li className={menuElement.on ? "active" : ""} key={menuElement.id} >
-                <a className="uppercase text-white letter-spacing-2" href={menuElement.url} onClick={() => handleClick(menuElement.id)}>
+                <a className="uppercase text-white letter-spacing-2" href={menuElement.url} onClick={() => props.handleClick(menuElement.id)}>
                     <span>{menuElement.id}</span>{menuElement.name}</a>
             </li >
         )
     })
 
 
-    function handleClick(id) {
-        console.log(id)
-        setMenuElements(prevElement => {
-            return prevElement.map((element) => {
-                return element.id == id ? { ...element, on: !element.on } : { ...element, on: false }
-            })
-        })
-
-    }
     function handleClickMobile() {
         setMobileMenuVisible(prev => {
             return !prev

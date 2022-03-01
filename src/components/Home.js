@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from "./NavBar";
 
-export default function Home() {
+
+export default function Home(props) {
     return (
         <div>
             <div className="grid-container grid-container--home">
@@ -12,7 +12,7 @@ export default function Home() {
                     <p>Let’s face it; if you want to enter the Metaverse, you might as well genuinely go all the way and not hover on the edge of it. We are just at the beginning of this revolution, strap yourself in and get ready for a truly out of this world experience!</p>
                 </div>
                 <div>
-                    <a href="#" className="large-button uppercase  ff-serif text-white bg-blue">Enter</a>
+                    <button onClick={() => props.handleClick("01")} className="large-button uppercase  ff-serif text-white bg-blue">Enter</button>
                 </div>
 
             </div>
