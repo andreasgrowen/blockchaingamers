@@ -190,6 +190,7 @@ select {
   
 }*/
 .grid-container--metaverse{
+    padding-top: min(30rem,9vh);;
     padding-bottom: max(20rem,9vh);
     align-items: end;
     
