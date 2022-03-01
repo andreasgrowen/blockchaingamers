@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup"
 import axios from "axios";
 
@@ -12,7 +12,7 @@ export default function SignUpForm() {
     const [succes, setSucces] = React.useState(false)
 
     async function submitForm(values, formik) {
-        console.log("VALUESSSSSSSSSSSSSSSSSSSSSSSS" + values);
+
 
         const { email } = values;
         try {

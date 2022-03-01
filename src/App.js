@@ -11,13 +11,11 @@ function App() {
   const showComponent = menuElements.map(element => {
     if (element.on === true) {
       return element.name
+    } else {
+      return ""
     }
 
   })
-
-  console.log("showcomponent:" + JSON.stringify(showComponent))
-
-
   function handleClick(id) {
     console.log(id)
     setMenuElements(prevElement => {
