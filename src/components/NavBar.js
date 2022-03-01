@@ -1,12 +1,12 @@
 
 import React from "react"
 import logo from "../assets/shared/logotext.png"
-import dataTest from "../dataTest"
+import { data } from "../dataTest"
 
 export default function NavBar(props) {
 
 
-    const [mobileMenuVisible, setMobileMenuVisible] = React.useState(dataTest.mobileMenuVisible)
+    const [mobileMenuVisible, setMobileMenuVisible] = React.useState(data.mobileMenuVisible)
 
     const menuElements = props.menuElements
     console.log(menuElements)

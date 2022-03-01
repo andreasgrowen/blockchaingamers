@@ -3,11 +3,10 @@ import React from "react"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import Metaverse from "./components/Metaverse"
-import dataTest from "./dataTest"
+import { data } from "./dataTest"
 
 function App() {
-  const [menuElements, setMenuElements] = React.useState(dataTest.menuElements)
-
+  const [menuElements, setMenuElements] = React.useState(data.menuElements)
   const showComponent = menuElements.map(element => {
     if (element.on === true) {
       return element.name

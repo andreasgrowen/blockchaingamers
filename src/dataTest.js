@@ -1,4 +1,5 @@
-export default {
+
+export let data = {
     mobileMenuVisible: false,
     menuElements: [
         {
@@ -26,3 +27,4 @@ export default {
             on: false
         }]
 }
+
