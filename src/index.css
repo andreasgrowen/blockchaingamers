@@ -390,7 +390,8 @@ select {
 /*primary-header*/
 
 .logo {
-    margin: .1rem clamp(0.1rem,2vw,1.55rem);
+    margin: .3rem clamp(0.1rem,2vw,1.55rem);
+    padding-right: 60px;
     max-height: 4.5rem;
     
 
